@@ -1,0 +1,55 @@
+\documentclass{book}
+\usepackage{lipsum}
+\usepackage[outer=0.75in,inner=1.5in]{geometry}
+\usepackage{lscape}
+\usepackage{multicol}
+\title{Workshop on \LaTeX\ Document Preparation}
+\author{Govind M J}
+\date{\today}
+
+\begin{document}
+	\pagenumbering{roman}
+	\maketitle
+	\tableofcontents
+	\pagebreak
+	\chapter{Computer Fundamentals}
+	\setlength{\columnseprule}{1pt}
+	\begin{multicols}{3}
+		\pagenumbering{arabic}
+		\setcounter{page}{1}
+		\section{Introduction}
+		\lipsum[2]
+		
+		\subsection{First Sub Section}
+		\lipsum[1-2]
+		\subsection{Second Sub Section}
+		\lipsum[3-5]
+		
+		\section{Overview}
+		\lipsum[6-6]
+		
+		\section{Conclusion}
+		\lipsum[1]
+	\end{multicols}
+	
+	
+	\begin{landscape}
+		\chapter{Input Devices}
+		\pagenumbering{alph}
+		\setcounter{page}{1}
+		\section{Introduction}
+		\lipsum[2]
+		
+		\subsection{First Sub Section}
+		\lipsum[1-2]
+		\subsection{Second Sub Section}
+		\lipsum[3-5]
+		
+		\section{Overview}
+		\lipsum[6-6]
+		
+		\section{Conclusion}
+		\lipsum[1]
+	\end{landscape}
+	
+\end{document}
